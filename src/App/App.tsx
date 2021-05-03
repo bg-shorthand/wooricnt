@@ -1,5 +1,12 @@
+import GlobalStyle from "../GlobalStyled.styled";
+
 function App() {
-  return null;
+  return (
+    <>
+      <GlobalStyle />
+      <header></header>
+    </>
+  );
 }
 
 export default App;
