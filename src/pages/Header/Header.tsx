@@ -5,7 +5,7 @@ import Title from "components/Title/Title";
 
 const StyledHeader = styled.header`
   position: relative;
-  padding: 50px 0;
+  padding-top: 50px;
 
   & > a:first-child {
     margin: 0 auto;
