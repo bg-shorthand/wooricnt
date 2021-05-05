@@ -2,12 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
-  display: inline-block;
+  display: block;
   color: inherit;
   text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  padding: 10px 0;
+  width: fit-content;
+  padding: 10px;
   text-align: center;
 
   &:visited {

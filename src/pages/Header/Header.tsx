@@ -1,10 +1,26 @@
-import StyledLink from "../../components/Link/Link";
-import Nav from "../../components/Nav/Nav";
-import Title from "../../components/Title/Title";
+import styled from "styled-components";
+import StyledLink from "components/Link/Link";
+import Nav from "components/Nav/Nav";
+import Title from "components/Title/Title";
+
+const StyledHeader = styled.header`
+  position: relative;
+  padding: 50px 0;
+
+  & > a:first-child {
+    margin: 0 auto;
+  }
+
+  & a:nth-child(2) {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+`;
 
 const Header = () => {
   return (
-    <header>
+    <StyledHeader>
       <StyledLink to="/">
         <Title level={"h1"}>우리교육컨설팅</Title>
       </StyledLink>
@@ -18,7 +34,7 @@ const Header = () => {
           ["매수등록", "/for-buy"],
         ]}
       />
-    </header>
+    </StyledHeader>
   );
 };
 

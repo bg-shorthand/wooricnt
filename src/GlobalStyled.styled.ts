@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import { MAX_WIDTH } from "constant/const";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -10,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body > * {
-    max-width: 700px;
+    max-width: ${MAX_WIDTH + "px"};
     margin: 0 auto;
   }
 `;

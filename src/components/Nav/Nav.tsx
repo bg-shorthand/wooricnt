@@ -2,7 +2,7 @@ import styled from "styled-components";
 import StyledLink from "../Link/Link";
 
 const StyledNav = styled.nav`
-  margin: 20px auto;
+  margin: 30px auto;
 
   & > ul {
     display: flex;
@@ -12,10 +12,15 @@ const StyledNav = styled.nav`
     & > li {
       margin-left: 2px;
       width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
 
       &::after {
         content: "";
         display: block;
+        width: 100%;
         transform: scaleX(0);
         border-top: 2px solid black;
         transition: all 300ms;
@@ -25,6 +30,10 @@ const StyledNav = styled.nav`
         content: "";
         display: block;
         transform: scaleX(1);
+      }
+
+      & > a {
+        width: 100%;
       }
     }
   }
