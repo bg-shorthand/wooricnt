@@ -1,10 +1,11 @@
+import Header from "../containers/Header/Header";
 import GlobalStyle from "../GlobalStyled.styled";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <header></header>
+      <Header />
     </>
   );
 }
